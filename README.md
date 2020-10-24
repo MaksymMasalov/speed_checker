@@ -1,1 +1,5 @@
-# speed_checker
+# Speed checker
+
+requirements:
+- Flask;
+- requests;
