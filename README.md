@@ -3,3 +3,4 @@
 requirements:
 - Flask;
 - requests;
+- threading
