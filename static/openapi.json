@@ -1,0 +1,57 @@
+{
+  "openapi": "3.0.0",
+  "paths": {
+    "/api": {
+      "get": {
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        },
+        "operationId": "get_main_class",
+        "parameters": [
+          {
+            "description": "Specify the name of domain",
+            "in": "query",
+            "name": "domains",
+            "schema": {
+              "type": "array",
+              "items": {
+                "type": "string"
+              }
+            }
+          }
+        ],
+        "tags": [
+          "api-domains"
+        ]
+      }
+    }
+  },
+  "info": {
+    "title": "Speed checker",
+    "version": "1.0",
+    "description": "Application for checking the speed of loading domains."
+  },
+  "tags": [
+    {
+      "name": "api-domains",
+      "description": "Manage domains"
+    }
+  ],
+  "servers": [
+    {
+      "url": "/dev"
+    }
+  ],
+  "components": {
+    "responses": {
+      "ParseError": {
+        "description": "When a mask can't be parsed"
+      },
+      "MaskError": {
+        "description": "When any error occurs on mask"
+      }
+    }
+  }
+}

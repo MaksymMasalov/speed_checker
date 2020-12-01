@@ -1,0 +1,10 @@
+{
+    "dev": {
+        "app_function": "api.app",
+        "profile_name": "testuser4",
+        "project_name": "api",
+        "runtime": "python3.6",
+        "s3_bucket": "zappa-rbtrftshp",
+        "aws_region": "us-east-2"
+    }
+}
